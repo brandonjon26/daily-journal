@@ -30,4 +30,4 @@ export const getJournalEntries = () => {
     )
     return sortedByDate
 }
-console.log(getJournalEntries());
+// console.log(getJournalEntries());

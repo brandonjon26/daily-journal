@@ -23,6 +23,6 @@ export const EntryListComponent = () => {
             Invoke the component that returns an
             HTML representation of a single entry
         */
-        entry.innerHTML += journalHTMLRep;
+        entryLog.innerHTML += journalHTMLRep;
     }
 }
