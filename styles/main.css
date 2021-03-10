@@ -2,3 +2,14 @@ fieldset {
     display: flex;
     flex-direction: column;   
 }
+
+/* footer {
+    display: flex;
+justify-content: flex-start;
+position: absolute;
+bottom: 0;
+width: 100%;
+padding-right:0px;
+background-color: rgb(36, 57, 91);
+color: rgb(242, 238, 231);
+} */

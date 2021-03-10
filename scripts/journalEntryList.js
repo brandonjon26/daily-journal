@@ -15,14 +15,14 @@ export const EntryListComponent = () => {
     const entries = getJournalEntries()
     let journalHTMLRep = ""
     for (const entry of entries) {
-        journalHTMLRep += JournalEntryComponent(entry);
-    }
-
-    for (const entry of entries) {
-        /*
-            Invoke the component that returns an
-            HTML representation of a single entry
-        */
+        journalHTMLRep = JournalEntryComponent(entry);        
         entryLog.innerHTML += journalHTMLRep;
     }
+
+    // for (const entry of entries) {
+    //     /*
+    //         Invoke the component that returns an
+    //         HTML representation of a single entry
+    //     */
+    // }
 }
