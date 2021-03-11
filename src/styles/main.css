@@ -3,13 +3,25 @@ fieldset {
     flex-direction: column;   
 }
 
-/* footer {
+footer {
     display: flex;
     justify-content: flex-start;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     padding-right:0px;
     background-color: rgb(36, 57, 91);
     color: rgb(242, 238, 231);
-} */
+}
+
+.box {
+    margin-bottom: 50px;
+}
+
+fieldset {
+    display: flex;
+    border-top: 2px solid indigo;
+    border-left: 2px solid indigo;
+    border-right: 2px solid indigo;
+    border-bottom: 2px solid indigo;
+}
