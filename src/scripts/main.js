@@ -1,5 +1,5 @@
-import { getJournalEntries } from "./data/dataManager.js"
+import { getEntries } from "./data/dataManager.js"
 import { EntryListComponent } from "./journal/journalEntryList.js"
 
-getJournalEntries();
+getEntries();
 EntryListComponent();

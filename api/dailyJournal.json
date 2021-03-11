@@ -34,6 +34,13 @@
       "entry": "Practicing JSON and Java Script with my daily journal. I'm making progress but have some questions.",
       "mood": "Indifferent",
       "id": 4
+    },
+    {
+      "date": "03/11/2021",
+      "concept": "JSON server",
+      "entry": "Having trouble getting my data to display on the dom, not really sure where to go from here.",
+      "mood": "frustrated...",
+      "id": 5
     }
   ]
 }
