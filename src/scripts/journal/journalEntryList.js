@@ -4,7 +4,7 @@
  *    there are items in the collection exposed by the
  *    data module component
  */
-import { getJournalEntries } from "./journalData.js"
+import { getJournalEntries } from "../data/dataManager.js"
 import { JournalEntryComponent } from "./journalEntry.js"
 
 // DOM reference to where all entries will be rendered
