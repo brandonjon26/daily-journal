@@ -1,10 +1,10 @@
 export const journalEntry = () => {
     return `
-    <form class="newPost">
+    <form class="newEntry">
         <div>
             <input value=""
-                   name="postTitle"
-                   class="newPost__input"
+                   name="EntryTitle"
+                   class="newEntry__input"
                    type="text"
                    placeholder="Title" />
         </div>

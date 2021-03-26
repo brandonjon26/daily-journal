@@ -9,6 +9,19 @@
 
 export const getEntries = () => {
 
-    return fetch("http://localhost:8088/entries")
+    return fetch("http://localhost:8090/entries")
     .then(response => response.json())
+    .then(parsedResponse => {
+        return parsedResponse;
+    })
+}
+
+const loggedInUser = {
+	id: 1,
+	name: "Brandon",
+	email: "brandon@myjournal.com"
+}
+
+export const getLoggedInUser = () => {
+	return loggedInUser;
 }
