@@ -1,28 +1,26 @@
-/*
- *  Purpose:
- *    To render as many journal entry components as
- *    there are items in the collection exposed by the
- *    data module component
- */
-import { getEntries } from "../data/dataManager.js"
-import { JournalEntryComponent } from "./journal.js"
+
+import { JournalEntryComponent } from "./journalEntry.js"
 
 // DOM reference to where all entries will be rendered
 const entryLog = document.querySelector("#entryLog")
 
-export const EntryListComponent = () => {
-    // Use the journal entry data from the data module component
-    const entries = getEntries()
+export const journalEntryList = (entries) => {
+    // declaring a variable that will hold all HTML for every entry in the entries array
     let journalHTMLRep = ""
-    for (const entry of entries) {
-        journalHTMLRep = JournalEntryComponent(entry);        
-        entryLog.innerHTML += journalHTMLRep;
-    }
-
-    // for (const entry of entries) {
-    //     /*
-    //         Invoke the component that returns an
-    //         HTML representation of a single entry
-    //     */
-    // }
+    // loop over array to access each entry in the array of entries
+    entries.forEach(entry => {
+        // for every entry, we are first invoking journalEntryComponent and passing that entry to it as an argument
+        // journalEntryComponent returns an HTML representation of that entry
+        // we append that HTML representation to the value of journalHTMLRep 
+        journalHTMLRep += JournalEntryComponent(entry); 
+    })
+    // at this point, the value of journalHTMLRep is = all of the HTML reps for all of the entries
+    // we replace the inner.HTML of entryLog with journalHTMLRep
+    entryLog.innerHTML = journalHTMLRep;
 }
+
+
+
+// for (const entry of entries) {
+//    journalHTMLRep += JournalEntryComponent(entry);      
+// }
